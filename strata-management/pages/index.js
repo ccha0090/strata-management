@@ -1,5 +1,5 @@
-// pages/index.js
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -16,26 +16,40 @@ export default function Home() {
           Keeping our building clean, safe, and running smoothly 🏢
         </p>
         <div className={styles.grid}>
-          <a href="/about" className={styles.card}>
-            <h3>About &rarr;</h3>
-            <p>Learn more about our building and community goals.</p>
-          </a>
-          <a href="/committee" className={styles.card}>
-            <h3>Committee &rarr;</h3>
-            <p>Meet the Secretary, Treasurer, and Chairperson.</p>
-          </a>
-          <a href="/contact" className={styles.card}>
-            <h3>Contact &rarr;</h3>
-            <p>Send us maintenance requests or suggestions.</p>
-          </a>
-          <a href="/events" className={styles.card}>
-            <h3>Events &rarr;</h3>
-            <p>Stay updated on meetings and community events.</p>
-          </a>
-          <a href="/maintenance" className={styles.card}>
-            <h3>Maintenance &rarr;</h3>
-            <p>Track scheduled maintenance or report issues.</p>
-          </a>
+          <Link href="/about" legacyBehavior>
+            <a className={styles.card}>
+              <h3>About &rarr;</h3>
+              <p>Learn more about our building and community goals.</p>
+            </a>
+          </Link>
+
+          <Link href="/committee" legacyBehavior>
+            <a className={styles.card}>
+              <h3>Committee &rarr;</h3>
+              <p>Meet the Secretary, Treasurer, and Chairperson.</p>
+            </a>
+          </Link>
+
+          <Link href="/contact" legacyBehavior>
+            <a className={styles.card}>
+              <h3>Contact &rarr;</h3>
+              <p>Send us maintenance requests or suggestions.</p>
+            </a>
+          </Link>
+
+          <Link href="/events" legacyBehavior>
+            <a className={styles.card}>
+              <h3>Events &rarr;</h3>
+              <p>Stay updated on meetings and community events.</p>
+            </a>
+          </Link>
+
+          <Link href="/maintenance" legacyBehavior>
+            <a className={styles.card}>
+              <h3>Maintenance &rarr;</h3>
+              <p>Track scheduled maintenance or report issues.</p>
+            </a>
+          </Link>
         </div>
       </main>
     </div>
