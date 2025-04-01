@@ -2,6 +2,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
+// Log the environment variable (this runs on the server during module load)
+console.log("Environment Variable INFO1111_ASSIGNMENT:", process.env.INFO1111_ASSIGNMENT);
+
 export default function Home() {
   return (
     <div className={styles.container}>
