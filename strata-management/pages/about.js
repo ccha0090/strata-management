@@ -1,3 +1,4 @@
+// pages/about.js
 import Head from 'next/head';
 
 export default function About() {
@@ -7,7 +8,7 @@ export default function About() {
         <title>About - Strata Management</title>
       </Head>
       <h1>About Our Building</h1>
-      <p>This page gives you an overview of our building, its history, and our community goals.</p>
+      <p>This page gives an overview of our building, its history, and our community goals.</p>
     </div>
   );
 }
